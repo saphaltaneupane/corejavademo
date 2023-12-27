@@ -43,7 +43,7 @@ public class ProductServiceImpl implements ProductService {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb2pm","root","");
 //        plist.remove(index);
-            String sql="delete from testdb2pm where id=2";
+            String sql="delete from product where id=2";
             Statement st = con.createStatement();
             st.execute(sql);
             con.close();
